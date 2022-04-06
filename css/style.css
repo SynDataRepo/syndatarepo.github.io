@@ -1,0 +1,541 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, address, em, q, strong, var, b, center, form, label, table, caption, thead, tr, th, td, article, aside, canvas, details, embed, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  list-style: none;
+}
+
+.loader {
+  position: relative;
+  display: inline-block;
+  margin: 0 12.5% 100px;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #0cf;
+  border-radius: 50%;
+  animation: spin 0.75s infinite linear;
+}
+.loader::before,
+.loader::after {
+  left: -2px;
+  top: -2px;
+  display: none;
+  position: absolute;
+  content: '';
+  width: inherit;
+  height: inherit;
+  border: inherit;
+  border-radius: inherit;
+}
+
+.loader-1 {
+  border-top-width: 0;
+}
+
+a {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.container-top {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex: 1;
+  padding: 2em 4em;
+  height: auto;
+  align-items: flex-start;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.logo {
+  width: 250px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.6rem 3rem 1.6rem 1.6rem;
+}
+
+header .nav {
+  display: flex;
+}
+
+.main {
+  height: 100%;
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.hero {
+  width: 80%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-right: 1em;
+  align-self: center;
+}
+
+.hero h1 {
+  width: 100%;
+  max-width: 600px;
+}
+
+.animation {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.hexagon {
+  width: 400px;
+  height: 400px;
+  background: #f8f5f5;
+  position: absolute;
+  top: 2%;
+  left: 20%;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  clip-path: polygon(0% 50%, 25% 95%, 75% 95%, 100% 50%,  75% 5%, 25% 5%);
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  animation: hexagonAnimation 60s infinite linear;
+  opacity: 100%;
+  z-index: -9999;
+}
+
+
+@keyframes hexagonAnimation {
+0% {transform: translateX( -50% ) rotate( 0deg );}
+100% {transform :translateX( -50% ) rotate( -360deg );}
+}
+
+.description {
+  padding: 4em;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.dark {
+  background: linear-gradient(to right, #032955, #4D6A88);
+  color: #fff;
+}
+
+.light {
+  background: linear-gradient(to right, #57728E, #7496B9);
+  height: min-content;
+  color: #fff;
+}
+
+input[type="email"], [type="text"] {
+    width: 50%;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 4px;
+  }
+
+input[type="submit"] {
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: #FD5523;
+  color: #fff;
+  padding: 0.8em 2em;
+  margin: 2em;
+  transition: all 100ms ease-out;
+  cursor: pointer;
+  width: 25%;
+}
+
+button {
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: #FD5523;
+  color: #fff;
+  padding: 0.8em 2em;
+  transition: all 100ms ease-out;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff440a;
+  transition-duration: .2s;
+}
+
+.container-top img {
+  height: auto;
+  max-width: 680px;
+  justify-self: flex-start;
+}
+
+
+.column {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+  flex-direction: row;
+  flex: 1;
+  align-items: flex-start;
+}
+
+.team-column {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+  flex-direction: row;
+  flex: 1;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-box {
+  padding: 2.6em;
+  background-color: #fff;
+  margin: 1em;
+  color: #032955;
+  border-radius: 18px;
+  text-align: left;
+  filter: drop-shadow(0 0 30px rgba(18, 29, 58, 0.158));
+  width: 100%;
+}
+
+.team-content-box {
+  padding: 2.6em;
+  background-color: #fff;
+  margin: 1em;
+  color: #032955;
+  border-radius: 18px;
+  text-align: left;
+  filter: drop-shadow(0 0 30px rgba(18, 29, 58, 0.158));
+  width: 20%;
+}
+
+.logo-box {
+  margin: 1em;
+  text-align: left;
+  width: 100%;
+}
+
+.logo-box-sm {
+  width: 50%;
+}
+
+.content-text {
+  padding: 2.6em;
+  color: #032955;
+  background-color: #fff;
+}
+
+.img-right, .img-left {
+  border-radius: 18px;
+}
+
+.img-right{
+  margin-bottom: 64px;
+}
+
+.img-left {
+  max-width: 800px;
+}
+
+section {
+  max-width: 1920px;
+  height: auto;
+}
+section nav {
+  margin-bottom: 2.5rem;
+}
+section.footer {
+  margin-bottom: 0;
+  width: 100%;
+  bottom: 0;
+  background-color: #f2f2f2;
+}
+
+nav {
+  display: flex;
+  align-items: flex-end;
+}
+
+nav a {
+  display: block;
+  padding: 0.2em 0.5em;
+  outline: none;
+}
+
+
+.desktop-only {
+  display: inline;
+}
+
+.container img {
+  width: 100%;
+  max-width: 1920px;
+  object-fit: cover;
+}
+
+.flex {
+  display: flex;
+}
+
+.child {
+  min-width: 50%;
+}
+
+.desktop-only {
+  display: inline;
+}
+
+
+h1 {
+  font-family: "Source Code Pro", monospace;
+  font-size: 2.25rem;
+  margin-bottom: 1.25rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: "Source Code Pro", monospace;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 500;
+}
+a:hover {
+  color: #FD5523;
+  cursor: pointer;
+}
+
+button {
+  font-family: "Source Code Pro", monospace;
+}
+
+header {
+  font-family: "Source Code Pro", monospace;
+}
+
+header p {
+  font-size: 0.75rem;
+  line-height: 1.225rem;
+  margin-bottom: 2.5rem;
+}
+
+header a {
+  font-size: 0.875rem;
+  color: #909090;
+}
+header a:hover {
+  text-decoration: underline;
+  color: #FD5523;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.4rem;
+  margin-bottom: 1.25rem;
+  max-width: 800px;
+}
+
+li {
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.4rem;
+  margin-bottom: 1.25rem;
+  max-width: 800px;
+}
+
+.privacy a {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.footer-text {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1rem;
+  color: #818181;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 4em;
+}
+
+.copyright {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.75rem;
+  color: #818181;
+  line-height: 1.8;
+  padding: 4em 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.mobile-only {
+  display: none;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  
+  .desktop-only {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  
+  .hero {
+    width: 100%;
+  }
+
+  .column {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-column {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .container-top {
+    flex-direction: column;
+    padding: 4em 2em;
+  }
+
+  .img-left {
+    width: 100%;
+  }
+
+  .description {
+    padding: 4em 1em;
+  }
+
+  .content-text {
+    padding: 2.6em 0;
+  }
+
+  .content-box {
+    width: 100%;
+  }
+
+  .team-content-box {
+    width: 100%;
+  }
+
+  .logo-box {
+    width: 30%;
+  }
+
+  .logo-box-sm {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  
+  nav {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.2em;
+    max-width: 34rem;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  .mobile-only {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .mobile-only a {
+    padding-top: 2em;
+    text-align: center;
+  }
+
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+}

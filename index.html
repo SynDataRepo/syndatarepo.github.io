@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='icon' type='image/x-icon' href='favicon.ico' />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <title>Syndata AB</title>
+</head>
+<body>
+    <script>
+    window.addEventListener( "load", function () {
+        function sendData() {
+          const XHR = new XMLHttpRequest();
+          // Bind the FormData object and the form element
+          const FD = new FormData( form );
+          const FD_json = Object.fromEntries(FD.entries());
+          // Define what happens on successful data submission
+          XHR.addEventListener( "load", function(event) {
+            if (event.target.status==200) {
+                var element = document.getElementById('client-onboard');
+                element.innerHTML = '<h3>Success! Please check your mailbox for an invitation to use Syndapp Engine</h3>';
+            }
+            else {
+                var element = document.getElementById('client-onboard');
+                element.innerHTML = `<h3>${JSON.parse(event.target.response).fail}</h3>`;
+            }
+          } );
+          // Define what happens in case of error
+          XHR.addEventListener( "error", function( event ) {
+            alert( 'Oops! Something went wrong.' );
+          } );
+          // Set up our request
+          XHR.open( "POST", "https://9f412418.eu-de.apigw.appdomain.cloud/client-onboard/syndapp" );
+          // Add Headers
+          XHR.setRequestHeader( "Content-Type", "application/json" );
+          // Add API Key in header
+          XHR.setRequestHeader( "X-IBM-Client-Id", "053de01d-63f1-409b-807a-96787a5c09f8" );
+          // The data sent is what the user provided in the form
+          XHR.send(JSON.stringify(FD_json));
+        }
+        // Access the form element...
+        const form = document.getElementById( "client-onboard" );
+        // ...and take over its submit event.
+        form.addEventListener( "submit", function ( event ) {
+          event.preventDefault();
+          sendData();
+          var element = document.getElementById('client-onboard');
+          element.innerHTML = '<div class="loader loader-1"></div>';
+        } );
+    } );
+    </script>
+    <div class="wrapper">
+            <header class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.jpg" alt="Logo">
+                    </a>
+                </div>
+                <nav>
+                    <a href="#services">Services</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="privacy-notice.html">Privacy Notice</a>
+                    <a href="https://app.syndata.co" style="color:#FD5523">Syndapp</a>
+                </nav>
+            </header>
+        </div>
+        <div class="page">
+            <div class="main">
+                <section class="container-top">
+                    <form id="client-onboard", class="hero">
+                        <h3>Start synthetizing today, sign up for Syndapp's beta!</h3>
+                        <h4>Email:</h4>
+                        <input type="email" id="email" name="email">
+                        <h4>Organization:</h4>
+                        <input type="text" id="org" name="org">
+                        <br>
+                        <input type="submit" value="Submit" class="form-submit">
+                    </form>
+                    <img class="img-right desktop-only" src="img/img-01.jpg" alt="Image">
+                </section>
+                <div class="animation">
+                    <div class="hexagon"></div>
+                </div>
+                <section id="intro" class="container">
+                    <div class="description dark">
+                        <div>
+                            <h2>Our innovative technology</h2>
+                            <p>The Possibilities Are Endless. Through the use of Machine Learning, Artificial Intelligence and custom algorithms we can generate large data sets that match the statistical attributes of real data but are entirely synthetic. This means that the data can be used for many purposes such as predictive modelling, analytics, software testing and more. Our models are built on best in class techniques for privacy and data protection by design. Our data processing complies with relevant data protection and privacy laws around the world.</p>
+                        </div>
+                    </div>
+                </section>
+                <div id="services" class="container-top">
+                    <div class="child"><img class="img-left" src="img/img-02.jpg" alt="Image"></div>
+                    <div class="content-text">
+                        <h2>Introducing Syndapp, the synthetic engine</h2>
+                        <p>Through the use of Machine Learning, Artificial Intelligence and custom algorithms, Syndapp can generate large data sets that match the statistical attributes of real data but are entirely synthetic. This means that the data can be used for many purposes such as predictive modelling, analytics, software testing and more.
+                        <br>
+                        <br>
+                        <br>Try Syndapp out by signing up or contact us if interested in a demo. Syndapp runs both on or off prem.
+                    </div>
+                </div>
+                <section class="container">
+                    <div class="description light">
+                       <div class="row">
+                            <h2>Use cases</h2>
+                            <p>The synthetic data you produce with the Syndapp can be used by any organization from any industry and in any business vertical. The output generated is simply a synthetic representation of the real world data but without risking the disclosure of private information and providing the same utility for innovation.</p>
+                            <div class="column">
+                                <div class="content-box">
+                                    <h3>Software testing & development</h3>
+                                    <p>Integrate Syndapp into your software development pipeline to enable faster development cycles and at the same time preserving the privacy of the production data. With Syndapp, developers and testers can have access to the data they require, in the amounts they require, and with the analytic value they require.</p>
+                                    <a href="mailto:info@syndata.co"><button>Contact</button></a>
+                                </div>
+                                <div class="content-box">
+                                    <h3>Safe data sharing</h3>
+                                    <p>Synthetic data can be shared safely between your business partners and providers without risking the disclosure of any confidential information, but maintaining the same value and utility to provide the same insights as with real data.</p>
+                                    <a href="mailto:info@syndata.co"><button>Contact</button></a>
+                                </div>
+                                <div class="content-box">
+                                    <h3>Accelerate AI and analytics</h3>
+                                    <p>Accelerate the development of Machine Learning and Artificial Intelligence tools by eliminating the main bottleneck: the provision of the real data. With Syndapp, the need for large amounts of data for advanced analytics is not an issue anymore.</p>
+                                    <a href="mailto:info@syndata.co"><button>Contact</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            
+                </section>
+                <section class="container">
+                    <img src="img/img-03.jpg" alt="Image">
+                </section>
+                <section class="container">
+                    
+                    <div class="description">
+                        <div>
+                             <h2>Collaborations</h2>
+                             <div class="column">
+                                 <div class="logo-box">
+                                     <img src="img/sweden_ai.png" alt="Sweden AI logo">
+                                 </div>
+                                 <div class="logo-box">
+                                    <img src="img/european-ai.png" alt="European AI logo">
+                                </div>
+                                <div class="logo-box">
+                                    <img src="img/ibm.png" alt="IBM logo">
+                                </div>
+                                 <div class="logo-box logo-box-sm">
+                                    <img src="img/ai_sweden.png" alt="AI Sweden logo">
+                                 </div>
+                                 <div class="logo-box">
+                                    <img src="img/nvidia.png" alt="Nvidia logo">
+                                </div>
+                                <div class="logo-box">
+                                    <img src="img/rv.png" alt="Region Västerbotten logo">
+                                </div>
+                                <div class="logo-box">
+                                    <img src="img/swelife.png" alt="Swelife logo">
+                                </div>
+                             </div>
+                         </div>
+                    </div>
+                </section>
+                <section id="about" class="container">
+                    <div class="description dark">
+                        <div>
+                            <h2>About us</h2>
+                            <p><strong>Privacy professionals. Data Ethicists. Computer Scientists. Futurists.</strong><br>
+                                <br>We are a dedicated group of technologists that want to give the world – companies, organisations, researchers, students – easy access to synthetic data.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="container">
+                    
+                    <div class="description">
+                        <div>
+                             <h2>Who we are</h2>
+                             <div class="team-column">
+                                 <div class="team-content-box">
+                                    <h3>Mattias Ripoll</h3>
+                                    <p>Cofounder - CEO</p>
+                                    <a href="https://www.linkedin.com/in/mattiasripoll/" target="_blank">LinkedIn</a>
+                                 </div>
+                                 <div class="team-content-box">
+                                    <h3>Pruthvi Shetty</h3>
+                                    <p>Data Scientist</p>
+                                    <a href="https://www.linkedin.com/in/pruthvi-shetty/" target="_blank">LinkedIn</a>
+                                </div>
+                                <div class="team-content-box">
+                                    <h3>Guillermo Padres</h3>
+                                    <p>Cofounder - Head of Tech</p>
+                                    <a href="https://www.linkedin.com/in/guillermo-padres-9259201/" target="_blank">LinkedIn</a>
+                                </div>
+                                <div class="team-content-box">
+                                     <h3>Hannes Sjöblad</h3>
+                                     <p>Cofounder - Chairman</p>
+                                     <a href="https://www.linkedin.com/in/hannessapiens/" target="_blank">LinkedIn</a>
+                                </div>
+                                <div class="team-content-box">
+                                    <h3>Osmel Lavalier</h3>
+                                    <p>Fullstack Developer</p>
+                                    <a href="https://www.linkedin.com/in/osmel-lavalier/" target="_blank">LinkedIn</a>
+                                </div>
+                                <div class="team-content-box">
+                                    <h3>Fredrick Chahine</h3>
+                                    <p>Fullstack Developer</p>
+                                    <a href="https://www.linkedin.com/in/fredrickchahine/" target="_blank">LinkedIn</a>
+                                </div>
+                                <div class="team-content-box">
+                                    <h3>Stephania Nevado</h3>
+                                    <p>Jr. Frontend Developer</p>
+                                    <a href="https://www.linkedin.com/in/stephanianevado/" target="_blank">LinkedIn</a>
+                                </div>
+                             </div>
+                                <br>
+                                <h3>Interested to join us?</h3>
+                                <u><a href="https://www.linkedin.com/company/syntheticdata-ftw/jobs/" target="_blank">Open Positions</a></u>
+                         </div>
+                    </div>
+                </section>
+
+                <section class="container">
+                    <div class="description">
+                        <div>
+                             <h2>Key advisors</h2>
+                             <div class="column">
+                                 <div class="content-box">
+                                     <h3>Linus Jönsson</h3>
+                                     <p>Science and Research Advisor</p>
+                                     <a href="https://www.linkedin.com/in/linus-j%C3%B6nsson-3aa46b/" target="_blank">LinkedIn</a>
+                                 </div>
+                                 <div class="content-box">
+                                     <h3>Jan Garefeldt</h3>
+                                     <p>Test & Technical Presales Advisor</p>
+                                     <a href="https://www.linkedin.com/in/jan-garefelt-a5b7191/" target="_blank">LinkedIn</a>
+                                 </div>
+                                 <div class="content-box">
+                                     <h3>Peter Nord</h3>
+                                     <p>Actuary & Risk Advisor</p>
+                                     <a href="https://www.linkedin.com/in/peter-nord-andersson/" target="_blank">LinkedIn</a>
+                                 </div>
+                                 <div class="content-box">
+                                    <h3>Axel Tandberg</h3>
+                                    <p>DPO & Privacy Advisor</p>
+                                    <a href="https://www.linkedin.com/in/axel-tandberg-952499/" target="_blank">LinkedIn</a>
+                                </div>
+                                <div class="content-box">
+                                    <h3>Viktor Wrede</h3>
+                                    <p>Board Member and Business Strategy Advisor</p>
+                                    <a href="https://www.linkedin.com/in/viktorwrede/" target="_blank">LinkedIn</a>
+                                </div>
+                             </div>
+                         </div>
+                    </div>
+                </section>
+                <section id="contact" class="container">
+                    <div class="description">
+                        <div>
+                             <h2>Get in touch</h2>
+                             <a href="mailto:info@syndata.co"><button>Contact</button></a>
+                             
+                         </div>
+                    </div>
+                </section>
+                <section class="footer">
+                    <footer>
+                        <div class="mobile-only"><a href="faq.html">FAQ</a><a href="privacy-notice.html">Privacy Notice</a></div>
+                        <p class="footer-text">Medborgarplatsen 25<br>118 72 Stockholm, Sweden</p>
+                        <p class="copyright">© 2022 by Syndata AB.<br>All rights reserved.</p>
+                    </footer>
+                </section>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
