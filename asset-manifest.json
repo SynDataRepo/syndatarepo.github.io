@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.24691bcc.css",
+    "main.js": "/static/js/main.d1e376e4.js",
+    "static/media/synapp.gif": "/static/media/synapp.fba861a829a8f2cf2f7d.gif",
+    "static/media/data-orientation.gif": "/static/media/data-orientation.4c9919bad70e8ecd9016.gif",
+    "static/media/model-training.gif": "/static/media/model-training.0e2ccd5875b31d6f3689.gif",
+    "static/media/bg-header.png": "/static/media/bg-header.ef10012dd308360cec06.png",
+    "static/media/team-img.png": "/static/media/team-img.092602c8053fa55eb182.png",
+    "static/media/logo-syndata.svg": "/static/media/logo-syndata.7ae10aaeb0c0f8280f84ebdfdea40130.svg",
+    "static/media/synapp.png": "/static/media/synapp.e1b591741ce1430943b3.png",
+    "static/media/healthcare-image.png": "/static/media/healthcare-image.219474a6b023d4492d76.png",
+    "static/media/data-privacy.png": "/static/media/data-privacy.84c6482a83d94946957a.png",
+    "static/media/finance-image2.png": "/static/media/finance-image2.84c6482a83d94946957a.png",
+    "static/media/data-retention.png": "/static/media/data-retention.6539e5d3b4b4e176ae69.png",
+    "static/media/choose-model.png": "/static/media/choose-model.0c6c1beb4666ec14c69b.png",
+    "static/media/sharing-images.png": "/static/media/sharing-images.8dea8f32e672447b9091.png",
+    "static/media/healthcare-image2.png": "/static/media/healthcare-image2.ead7ab84a0296330b2cc.png",
+    "static/media/test-display.png": "/static/media/test-display.71f653c66a742b2fb429.png",
+    "static/media/dataset-image.png": "/static/media/dataset-image.b0ca8ac7e1abe3487100.png",
+    "static/media/synthetic-data.png": "/static/media/synthetic-data.9a5f3b5c87e86d168b93.png",
+    "static/media/finance-image.png": "/static/media/finance-image.0edeebc851a1c411f115.png",
+    "static/media/knowledge-hub.png": "/static/media/knowledge-hub.6cc1a9d7be2089bc570d.png",
+    "static/media/syndata-logo-orange.png": "/static/media/syndata-logo-orange.b71d28aece8a7b0641fe.png",
+    "static/media/synapp-engine-diagram.png": "/static/media/synapp-engine-diagram.875aa86da36df5427e75.png",
+    "static/media/clicks-image.png": "/static/media/clicks-image.07229519e9e3ff1480f4.png",
+    "index.html": "/index.html",
+    "main.24691bcc.css.map": "/static/css/main.24691bcc.css.map",
+    "main.d1e376e4.js.map": "/static/js/main.d1e376e4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24691bcc.css",
+    "static/js/main.d1e376e4.js"
+  ]
+}
