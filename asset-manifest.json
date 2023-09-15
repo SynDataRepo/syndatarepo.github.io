@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c34ce228.css",
-    "main.js": "/static/js/main.4a12bdfc.js",
+    "main.css": "/static/css/main.68dcb96d.css",
+    "main.js": "/static/js/main.5105aa13.js",
     "static/media/synapp.gif": "/static/media/synapp.d089c0e838d5f2167e10.gif",
     "static/media/data-orientation.gif": "/static/media/data-orientation.1381fad2b81e2cd63209.gif",
     "static/media/model-training.gif": "/static/media/model-training.0e2ccd5875b31d6f3689.gif",
@@ -30,11 +30,11 @@
     "static/media/synapp-engine-diagram.png": "/static/media/synapp-engine-diagram.af8c57f36ad7d0a70b3b.png",
     "static/media/clicks-image.png": "/static/media/clicks-image.503ddc20077e68c28f71.png",
     "index.html": "/index.html",
-    "main.c34ce228.css.map": "/static/css/main.c34ce228.css.map",
-    "main.4a12bdfc.js.map": "/static/js/main.4a12bdfc.js.map"
+    "main.68dcb96d.css.map": "/static/css/main.68dcb96d.css.map",
+    "main.5105aa13.js.map": "/static/js/main.5105aa13.js.map"
   },
   "entrypoints": [
-    "static/css/main.c34ce228.css",
-    "static/js/main.4a12bdfc.js"
+    "static/css/main.68dcb96d.css",
+    "static/js/main.5105aa13.js"
   ]
 }
