@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.68dcb96d.css",
-    "main.js": "/static/js/main.5105aa13.js",
-    "static/media/synapp.gif": "/static/media/synapp.d089c0e838d5f2167e10.gif",
-    "static/media/data-orientation.gif": "/static/media/data-orientation.1381fad2b81e2cd63209.gif",
+    "main.css": "/static/css/main.7a59a7ed.css",
+    "main.js": "/static/js/main.833b016d.js",
+    "static/media/headervideo.mp4": "/static/media/headervideo.7c17a62de24a20878af5.mp4",
     "static/media/model-training.gif": "/static/media/model-training.0e2ccd5875b31d6f3689.gif",
-    "static/media/bg-header.png": "/static/media/bg-header.ef10012dd308360cec06.png",
     "static/media/team-img.png": "/static/media/team-img.092602c8053fa55eb182.png",
+    "static/media/data-orientation.png": "/static/media/data-orientation.b6a2c3b2e8aecf0efa48.png",
+    "static/media/lapland.png": "/static/media/lapland.6e9d0dd423851699aeb2.png",
     "static/media/logo-syndata.svg": "/static/media/logo-syndata.7ae10aaeb0c0f8280f84ebdfdea40130.svg",
     "static/media/synthentic-data-left.png": "/static/media/synthentic-data-left.4bed19da2d3c9b87cbfb.png",
     "static/media/synapp.png": "/static/media/synapp.e1b591741ce1430943b3.png",
@@ -17,8 +17,8 @@
     "static/media/data-retention.png": "/static/media/data-retention.6539e5d3b4b4e176ae69.png",
     "static/media/data-rentention-eva.nulll-left.png": "/static/media/data-rentention-eva.nulll-left.c03994fcfb913b2f974b.png",
     "static/media/choose-model.png": "/static/media/choose-model.0c6c1beb4666ec14c69b.png",
-    "static/media/lapland.png": "/static/media/lapland.f1475f868bbcd2afa6e9.png",
     "static/media/sharing-images.png": "/static/media/sharing-images.8dea8f32e672447b9091.png",
+    "static/media/data-elevations.png": "/static/media/data-elevations.f4df88050020b02be89b.png",
     "static/media/healthcare-image2.png": "/static/media/healthcare-image2.ead7ab84a0296330b2cc.png",
     "static/media/test-display.png": "/static/media/test-display.71f653c66a742b2fb429.png",
     "static/media/dataset-image.png": "/static/media/dataset-image.b0ca8ac7e1abe3487100.png",
@@ -27,14 +27,14 @@
     "static/media/finance-image.png": "/static/media/finance-image.0edeebc851a1c411f115.png",
     "static/media/knowledge-hub.png": "/static/media/knowledge-hub.6cc1a9d7be2089bc570d.png",
     "static/media/syndata-logo-orange.png": "/static/media/syndata-logo-orange.b71d28aece8a7b0641fe.png",
-    "static/media/synapp-engine-diagram.png": "/static/media/synapp-engine-diagram.af8c57f36ad7d0a70b3b.png",
+    "static/media/synapp-engine-diagram.png": "/static/media/synapp-engine-diagram.ba7a1c8479a09bd7ac4f.png",
     "static/media/clicks-image.png": "/static/media/clicks-image.503ddc20077e68c28f71.png",
     "index.html": "/index.html",
-    "main.68dcb96d.css.map": "/static/css/main.68dcb96d.css.map",
-    "main.5105aa13.js.map": "/static/js/main.5105aa13.js.map"
+    "main.7a59a7ed.css.map": "/static/css/main.7a59a7ed.css.map",
+    "main.833b016d.js.map": "/static/js/main.833b016d.js.map"
   },
   "entrypoints": [
-    "static/css/main.68dcb96d.css",
-    "static/js/main.5105aa13.js"
+    "static/css/main.7a59a7ed.css",
+    "static/js/main.833b016d.js"
   ]
 }
