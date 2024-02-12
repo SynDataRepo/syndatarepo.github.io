@@ -1,11 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.3480a8f8.css",
-    "main.js": "/static/js/main.979f37bf.js",
+    "main.js": "/static/js/main.7d277ad8.js",
     "static/media/headervideo.mp4": "/static/media/headervideo.7c17a62de24a20878af5.mp4",
     "static/media/model-training.gif": "/static/media/model-training.0e2ccd5875b31d6f3689.gif",
     "static/media/data-elevations.png": "/static/media/data-elevations.6f960f278cc810b9503c.png",
-    "static/media/team-img.png": "/static/media/team-img.092602c8053fa55eb182.png",
     "static/media/healthcare-image.png": "/static/media/healthcare-image.b53f5db7cee207563cb7.png",
     "static/media/finance3.png": "/static/media/finance3.ddbb6d9895fe9e836b93.png",
     "static/media/data-orientation.png": "/static/media/data-orientation.b6a2c3b2e8aecf0efa48.png",
@@ -14,6 +13,7 @@
     "static/media/finance-image.png": "/static/media/finance-image.889f68e5f469ae5b29da.png",
     "static/media/logo-syndata.svg": "/static/media/logo-syndata.7ae10aaeb0c0f8280f84ebdfdea40130.svg",
     "static/media/synthentic-data-left.png": "/static/media/synthentic-data-left.4bed19da2d3c9b87cbfb.png",
+    "static/media/tree-img.webp": "/static/media/tree-img.0901a96ee77fe7c7284f.webp",
     "static/media/synapp.png": "/static/media/synapp.e1b591741ce1430943b3.png",
     "static/media/choose-model-left.png": "/static/media/choose-model-left.254bce35c93a44b64234.png",
     "static/media/data-privacy.png": "/static/media/data-privacy.84c6482a83d94946957a.png",
@@ -31,10 +31,10 @@
     "static/media/clicks-image.png": "/static/media/clicks-image.503ddc20077e68c28f71.png",
     "index.html": "/index.html",
     "main.3480a8f8.css.map": "/static/css/main.3480a8f8.css.map",
-    "main.979f37bf.js.map": "/static/js/main.979f37bf.js.map"
+    "main.7d277ad8.js.map": "/static/js/main.7d277ad8.js.map"
   },
   "entrypoints": [
     "static/css/main.3480a8f8.css",
-    "static/js/main.979f37bf.js"
+    "static/js/main.7d277ad8.js"
   ]
 }
